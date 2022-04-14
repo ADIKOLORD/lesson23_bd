@@ -1,0 +1,129 @@
+2)
+
+SELECT * FROM inner_flights
+
+ id | from_country | to_country | flight_type | company | neighbors 
+----+--------------+------------+-------------+---------+-----------
+  1 | OSH          | NARYN      | CHIKA       | ATAKA   | 15
+  2 | OSH          | TALAS      | CHINA       | ZASHI   | FIVE
+  3 | BISHKEK      | TALAS      | TURA        | ADIKO   | SIX
+  4 | BISHKEK      | OSH        | TRUE        | BAYEL   | TWO
+  5 | BATKEN       | OSH        | BIG         | SAMARA  | TEN
+  6 | OSH          | NARYN      | SMALL       | KUSI    | ONE
+  7 | OSH          | BATKEN     | SMALL       | KUSI    | THREE
+  8 | JALALABAD    | KOL        | MEDIUM      | ARGEN   | FOUR
+  9 | JALALABAD    | KOL        | MEDIUM      | ARGEN   | FOUR
+ 10 | JALALABAD    | KOL        | MEDIUM      | ARGEN   | 46
+ 11 | JALALABAD    | KOL        | MARK        | ARGEN   | 46
+ 12 | FEJLK        | KOL        | MARK        | ARGEN   | 46
+ 13 | FEJLK        | JHKJ       | MARK        | ARGEN   | 465
+ 14 | FEJLK        | JHKJ       | KJG         | KLKJ    | 465
+ 15 | RSDJH        | GHKJH      | KJG         | KLKJ    | 452
+
+
+3)
+SELECT * FROM inner_flights WHERE ID > 1O;
+
+ id | from_region | to_destination | company  | quantity 
+----+-------------+----------------+----------+----------
+ 11 | BISHKEK     | OSH            | COMPUTER |      156
+ 12 | BISHKEK     | OSH            | MARKDA   |      156
+ 13 | KOL         | BISHKEK        | MARKDA   |      156
+ 14 | NAMEL       | BISHKEK        | MARKDA   |      156
+ 15 | NAMEL       | BISHKEK        | AFJ      |   544546
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT * FROM outter_flights
+
+ id | from_country | to_country | flight_type | company | neighbors 
+----+--------------+------------+-------------+---------+-----------
+  1 | OSH          | NARYN      | CHIKA       | ATAKA   | 15
+  2 | OSH          | TALAS      | CHINA       | ZASHI   | FIVE
+  3 | BISHKEK      | TALAS      | TURA        | ADIKO   | SIX
+  4 | BISHKEK      | OSH        | TRUE        | BAYEL   | TWO
+  5 | BATKEN       | OSH        | BIG         | SAMARA  | TEN
+  6 | OSH          | NARYN      | SMALL       | KUSI    | ONE
+  7 | OSH          | BATKEN     | SMALL       | KUSI    | THREE
+  8 | JALALABAD    | KOL        | MEDIUM      | ARGEN   | FOUR
+  9 | JALALABAD    | KOL        | MEDIUM      | ARGEN   | FOUR
+ 10 | JALALABAD    | KOL        | MEDIUM      | ARGEN   | 46
+ 11 | JALALABAD    | KOL        | MARK        | ARGEN   | 46
+ 12 | FEJLK        | KOL        | MARK        | ARGEN   | 46
+ 13 | FEJLK        | JHKJ       | MARK        | ARGEN   | 465
+ 14 | FEJLK        | JHKJ       | KJG         | KLKJ    | 465
+ 15 | RSDJH        | GHKJH      | KJG         | KLKJ    | 452
+
+
+PROGRAMMER DATABASE
+
+1) 
+
+programmer=# SELECT name FROM programmer;
+
+ name  
+-------
+ ADIKO
+ BAKYT
+ Aygul
+ Jika
+ Ermek
+ Roma
+ 
+ Beka
+(8 rows)
+
+
+2)
+programmer=# SELECT age FROM programmer WHERE AGE > 30
+;
+ age 
+-----
+  46
+  55
+  31
+  31
+(4 rows)
+
+
+3) 
+programmer=# SELECT * FROM programmer WHERE fp_language = 'Python' or fp_language = 'C#'
+;
+ id | name  | age | fp_language | sp_language 
+----+-------+-----+-------------+-------------
+  1 | ADIKO |  17 | Python      | C#
+  2 | BAKYT |  16 | Python      | JAVA
+  3 | Aygul |  46 | Python      | C++
+  5 | Ermek |  55 | C#          | Java
+  6 | Roma  |  31 | Python      | Pascal
+  7 |       |  31 | Python      | Pascal
+  8 | Beka  |  25 | Python      | Javascript
+(7 rows)
+
+
+
+
